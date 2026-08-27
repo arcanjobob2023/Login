@@ -1,0 +1,107 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+main h1 {
+    font-style: italic;
+}
+
+
+.japanese-theme {
+    background-color: #ced0d3; 
+}
+
+.hero-section {
+    background-image: url('img/home.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 70vh; 
+    position: relative;
+    color: white;
+}
+
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-section > .container {
+    position: relative;
+    z-index: 2; 
+}
+
+
+.navbar {
+    background-color: rgba(33, 37, 41, 0.8) !important; 
+}
+
+.navbar-brand, .nav-link {
+    color: white !important;
+}
+
+.nav-link.active {
+    font-weight: bold;
+}
+
+
+footer {
+    margin-top: auto; 
+}
+
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    color: #007bff;
+}
+
+
+#chatbotResponse {
+    min-height: 100px;
+    overflow-y: auto;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+}
+
+
+#imageGalleryCarousel .carousel-item img {
+    height: 300px; 
+    object-fit: cover; 
+    width: 100%;
+}
+
+
+#weatherDisplay {
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #eaf6ff;
+}
+
+
+#clickCounterDisplay {
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+}
+
+
+.text-gold {
+    color: #ffd700;
+}

@@ -1,0 +1,10 @@
+# Bloqueia acesso HTTP direto a arquivos de banco de dados SQLite
+<FilesMatch "\.sqlite$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</FilesMatch>
